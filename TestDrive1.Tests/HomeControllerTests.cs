@@ -8,7 +8,7 @@ namespace TestDrive1.Tests
     public class HomeControllerTests
     {
         [Fact]
-        public void Index_Returns_Hello_World()
+        public void Index_Returns_A_View()
         {
             var underTest = new HomeController();
 
