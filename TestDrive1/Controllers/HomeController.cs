@@ -8,9 +8,9 @@ namespace TestDrive1.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            throw new NotImplementedException();
+            return View();
         }
     }
 }

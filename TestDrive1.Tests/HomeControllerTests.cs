@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using TestDrive1.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TestDrive1.Tests
 {
@@ -13,7 +14,7 @@ namespace TestDrive1.Tests
 
             var result = underTest.Index();
 
-            Assert.Equal("Hello World!", result);
+            Assert.IsType<ViewResult>(result);
         }
     }
 }
